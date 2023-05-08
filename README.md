@@ -2,7 +2,9 @@
 
 Para o template acima funcionar vamos criar o script e dar as devidas permissões.
 
-Entre na pasta /usr/lib/zabbix/externalscripts/ crie o arquivo coletar_ipv6
+Entre na pasta /usr/lib/zabbix/externalscripts/ 
+
+crie o arquivo coletar_ipv6
 
     #!/bin/bash
 
