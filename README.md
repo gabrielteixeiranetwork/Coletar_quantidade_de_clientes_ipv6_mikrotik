@@ -19,4 +19,6 @@ De permissão para o seu zabbix
     chown zabbix. /usr/lib/zabbix/externalscripts/coletar_ipv6
     chmod a+x /usr/lib/zabbix/externalscripts/coletar_ipv6
 Agora no terminal execute o script e veja se retorna algo.
+
+    ./coletar_ipv6
 ![image](https://user-images.githubusercontent.com/94009104/236940404-9ed894d7-4fbf-4288-b625-7ea750d77668.png)
