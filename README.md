@@ -4,13 +4,13 @@ Para o template acima funcionar vamos criar o script e dar as devidas permissõe
 
 Entre na pasta /usr/lib/zabbix/externalscripts/ 
 
-crie o arquivo coletar_ipv6
+Crie o arquivo coletar_ipv6
 
     #!/bin/bash
 
-    ip=10.200.253.1
-    usuario=zabbix
-    senha=zabbixsmarttelecom1@
+    ip=seu_ip
+    usuario=crie_um_user_no_seu_mikrotik
+    senha=crie_uma_senha_para_o_user_no_seu_mikrotik
     porta=22
 
     sshpass -p$senha ssh -o "StrictHostKeyChecking=no" -p$porta $usuario@$ip "ipv6 dhcp-server binding print terse" | wc -l
