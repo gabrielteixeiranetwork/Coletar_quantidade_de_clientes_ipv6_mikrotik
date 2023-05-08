@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>5.0</version>
+    <date>2023-05-08T21:44:53Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Mikrotik IPv6</template>
+            <name>Mikrotik IPv6</name>
+            <description>Criado por Gabriel Teixeira Consultoria</description>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>pppoes</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>IPv6 Conectados</name>
+                    <type>EXTERNAL</type>
+                    <key>coletar_ipv6[&quot;{HOST.CONN}&quot;,&quot;{$MACRO_USUARIO}&quot;,&quot;{$MACRO_SENHA}&quot;,&quot;{$MACRO_PORTA}&quot;]</key>
+                    <delay>60s</delay>
+                    <applications>
+                        <application>
+                            <name>pppoes</name>
+                        </application>
+                    </applications>
+                </item>
+            </items>
+            <macros>
+                <macro>
+                    <macro>{$MACRO_PORTA}</macro>
+                    <value>22</value>
+                </macro>
+                <macro>
+                    <macro>{$MACRO_SENHA}</macro>
+                    <value>sua senha</value>
+                </macro>
+                <macro>
+                    <macro>{$MACRO_USUARIO}</macro>
+                    <value>seu user</value>
+                </macro>
+            </macros>
+        </template>
+    </templates>
+</zabbix_export>
