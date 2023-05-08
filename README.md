@@ -8,7 +8,7 @@ Crie o arquivo coletar_ipv6
 
     #!/bin/bash
 
-    ip=seu_ip
+    ip=ip_do_seu_mikrotik
     usuario=crie_um_user_no_seu_mikrotik
     senha=crie_uma_senha_para_o_user_no_seu_mikrotik
     porta=22
