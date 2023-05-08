@@ -24,3 +24,33 @@ Agora no terminal execute o script e veja se retorna algo.
 ![image](https://user-images.githubusercontent.com/94009104/236940404-9ed894d7-4fbf-4288-b625-7ea750d77668.png)
 
 Importe o template 
+
+https://github.com/gabrielteixeiranetwork/Coletar_quantidade_de_clientes_ipv6_mikrotik/blob/main/Mikrotik_ipv6.xml
+
+Vamos editar algumas informações
+
+![image](https://user-images.githubusercontent.com/94009104/236944261-f3927489-e035-49d8-963d-f3802292fbf7.png)
+
+Adicione o template no seu host
+
+Note que ele não irá coletar os dados ainda, portanto vamos corrigir isso!!!
+
+Crie o diretório 
+
+    mkdir -p /var/lib/zabbix/.ssh
+Vá até o diretório
+
+    cd /var/lib/zabbix/.ssh
+Acesse o seu Mikrotik
+
+    ssh usuário@ip
+Vai te pedir a senha, logo em seguida feche o mesmo.
+
+Vamos ajustar a permissão
+
+    chown -R zabbix:zabbix /var/lib/zabbix/
+Agora saia do diretório e vá até o seu zabbix
+
+![image](https://user-images.githubusercontent.com/94009104/236945763-cd8da07a-af19-4629-be21-949253a77f46.png)
+
+Só ativar ipv6 nos seus clientes e observar :)
