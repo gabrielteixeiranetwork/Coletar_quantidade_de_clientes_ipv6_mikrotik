@@ -55,6 +55,8 @@ Vai te pedir a senha, logo em seguida feche o mesmo.
 Vamos ajustar a permissão
 
     chown -R zabbix:zabbix /var/lib/zabbix/
+Depois entre em cd /var/lib/zabbix/ e acesse novamente o seu concentrador, como fizemos antes
+
 Agora saia do diretório e vá até o seu zabbix
 
 ![image](https://user-images.githubusercontent.com/94009104/236945763-cd8da07a-af19-4629-be21-949253a77f46.png)
