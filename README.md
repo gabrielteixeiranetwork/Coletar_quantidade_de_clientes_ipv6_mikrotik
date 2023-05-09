@@ -18,6 +18,12 @@ De permissão para o seu zabbix
 
     chown zabbix. /usr/lib/zabbix/externalscripts/coletar_ipv6
     chmod a+x /usr/lib/zabbix/externalscripts/coletar_ipv6
+Antes de executar para verificar se está retornando algo, vamos voltar para a pasta inicial com o comando
+
+    cd
+Vamos instalar o SSHPASS
+
+    apt install sshpass
 Agora no terminal execute o script e veja se retorna algo.
 
     ./coletar_ipv6
